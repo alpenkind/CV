@@ -18,9 +18,14 @@ h6 {
 
 h1 {
   font-size: 28px;
-  color: #f75d5d;
+  color: #45b39d;
   font-weight: bolder;
 }
+
+h3 {
+  margin-top: 5px;
+}
+
 main {
   max-width: 800px;
   margin: 0 auto;
@@ -43,10 +48,37 @@ main,
   margin-bottom: 4px;
   margin-top: 30px;
 }
+
 .first {
   font-weight: bold;
 }
+
 .jobtitle {
   font-weight: 250;
   font-style: italic;
+}
+
+.links {
+  padding: 5px 7px;
+  color: #45b39d;
+}
+
+.links:hover {
+  color: #21584d;
+  background-color: rgba(196, 194, 194, 0.881);
+  cursor: pointer;
+}
+
+.links:active {
+  color: #0b1f1b;
+  background-color: rgba(154, 154, 154, 0.881);
+}
+
+article + article {
+  border-top: #3ca892 solid 1.5px;
+}
+
+article {
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
