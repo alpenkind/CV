@@ -18,7 +18,7 @@ h6 {
 
 h1 {
   font-size: 28px;
-  color: #45b39d;
+  color: #17423a;
   font-weight: bolder;
 }
 
@@ -38,7 +38,7 @@ main,
 
 .top {
   text-align: center;
-  background-color: rgb(234, 232, 232);
+  background-color: #3ca8923d;
   padding: 40px;
 }
 
@@ -85,4 +85,17 @@ article + article {
 article {
   padding-top: 15px;
   padding-bottom: 10px;
+}
+
+::selection {
+  background-color: #344344;
+  color: whitesmoke;
+}
+
+.top p::after {
+  content: "👩🏻‍💻";
+}
+
+article::first-letter {
+  color: #21584d;
 }
