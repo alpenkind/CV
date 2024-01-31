@@ -63,6 +63,10 @@ main,
   color: #45b39d;
 }
 
+.links:visited {
+  color: #344344;
+}
+
 .links:hover {
   color: #21584d;
   background-color: rgba(196, 194, 194, 0.881);
