@@ -32,11 +32,11 @@ main {
 }
 
 main,
-.top {
+.site-header {
   padding: 25px;
 }
 
-.top {
+.site-header {
   text-align: center;
   background-color: #3ca8923d;
   padding: 40px;
