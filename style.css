@@ -22,6 +22,11 @@ body {
   margin: 0;
 }
 
+main {
+  max-width: 75ch;
+  margin: 0 auto;
+}
+
 h1,
 h2,
 h3,
@@ -32,12 +37,7 @@ h6 {
 }
 
 h3 {
-  margin-top: 0.25rem;
-}
-
-main {
-  max-width: 75ch;
-  margin: 0 auto;
+  margin-bottom: 0.25rem;
 }
 
 /**************************************************************/
@@ -71,7 +71,11 @@ main,
   font-size: 0.75rem;
   color: rgb(74, 69, 75);
   margin-bottom: 0.25rem;
-  margin-top: 1.5rem;
+  margin-top: 0.25rem;
+}
+
+.bulleted-list {
+  margin-top: 0.5rem;
 }
 
 .first {
@@ -137,6 +141,7 @@ article::first-letter {
 .article-heading {
   position: relative;
   left: 0.5rem;
+  margin-top: 1.5rem;
 }
 
 .profile {
@@ -170,6 +175,7 @@ button {
   button {
     position: fixed;
   }
+
   article {
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
@@ -180,7 +186,20 @@ button {
   button {
     display: none;
   }
-  nav {
+
+  .navigation {
     display: none;
+  }
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    flex-direction: row;
   }
 }
