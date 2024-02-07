@@ -4,6 +4,7 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
   font-size: 20px;
+  color: #202c39;
 }
 
 @media screen and (min-width: 786px) {
@@ -42,6 +43,11 @@ h3 {
 
 /**************************************************************/
 /* Specific Stylings */
+
+h2 {
+  color: #283845;
+}
+
 main,
 .site-header {
   padding: 1.25rem;
@@ -49,18 +55,20 @@ main,
 
 .site-header {
   text-align: center;
-  background-color: rgba(60, 168, 146, 0.239);
   padding: 2rem;
+  background: #d8d5c0;
+  background: linear-gradient(142deg, #d8d5c0 21%, #f2e9dc 60%);
 }
 
 .main-heading {
   font-size: 2em;
-  color: #17423a;
+  color: #202c39;
   font-weight: bolder;
 }
 
 .profession {
   font-size: 1em;
+  color: #283845;
 }
 
 .address-element {
@@ -69,7 +77,7 @@ main,
 
 .date {
   font-size: 0.75rem;
-  color: rgb(74, 69, 75);
+  color: #283845;
   margin-bottom: 0.25rem;
   margin-top: 0.25rem;
 }
@@ -79,41 +87,41 @@ main,
 }
 
 .workplace {
-font-size: 1rem;  
-font-weight: 100;
+  font-size: 1rem;
+  font-weight: 100;
   font-style: italic;
 }
 
 .links:link {
   padding: 0.25rem 0.375rem;
-  color: rgb(52, 137, 120);
+  color: #d05d11;
 }
 
 .links:visited {
-  color: rgb(52, 67, 68);
+  color: #283845;
 }
 
 .links:hover {
-  color: rgb(33, 88, 77);
-  background-color: rgba(196, 194, 194, 0.881);
+  color: #f2e9dc;
+  background-color: #283845;
   cursor: pointer;
 }
 
 .links:active {
-  color: rgb(11, 31, 27);
+  color: #597e9b;
   background-color: rgba(154, 154, 154, 0.881);
 }
 
 [href^="mailto"] {
-  color: rgb(60, 168, 146);
+  color: #d05d11;
 }
 
 [href^="tel"] {
-  color: rgb(60, 168, 146);
+  color: #d05d11;
 }
 
 article + article {
-  border-top: rgb(60, 168, 146) solid 0.1rem;
+  border-top: #597e9b solid 0.1rem;
 }
 
 article {
@@ -122,17 +130,12 @@ article {
   padding-left: 0.5rem;
 }
 
-::selection {
-  background-color: rgb(52, 67, 68);
-  color: rgb(245, 245, 245);
-}
-
 .top p::after {
   content: "👩🏻‍💻";
 }
 
 article::first-letter {
-  color: rgb(33, 88, 77);
+  color: #d05d11;
 }
 
 .article-heading {
@@ -148,8 +151,8 @@ article::first-letter {
 }
 
 button {
-  background-color: rgb(33, 88, 77);
-  color: rgb(245, 245, 245);
+  background-color: #283845;
+  color: #f2e9dc;
   border: none;
   border-radius: 0.25rem;
   text-align: center;
@@ -205,11 +208,28 @@ button {
 @media screen and (min-width: 768px) {
   .article-heading {
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     flex-wrap: nowrap;
     align-items: baseline;
-    }
+  }
+
   .date {
     align-self: center;
+  }
+}
 
+@media screen and (max-width: 767px) {
+  .article-heading {
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background: #d8d5c0;
+  background: linear-gradient(320deg, #d8d5c0 21%, #f2e9dc 60%);
 }
