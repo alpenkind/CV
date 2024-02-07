@@ -74,16 +74,13 @@ main,
   margin-top: 0.25rem;
 }
 
-.bulleted-list {
-  margin-top: 0.5rem;
-}
-
 .first {
   font-weight: bold;
 }
 
-.jobtitle {
-  font-weight: 200;
+.workplace {
+font-size: 1rem;  
+font-weight: 100;
   font-style: italic;
 }
 
@@ -142,6 +139,7 @@ article::first-letter {
   position: relative;
   left: 0.5rem;
   margin-top: 1.5rem;
+  display: flex;
 }
 
 .profile {
@@ -202,4 +200,16 @@ button {
   .navigation {
     flex-direction: row;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .article-heading {
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    }
+  .date {
+    align-self: center;
+
 }
