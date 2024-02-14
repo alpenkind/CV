@@ -66,10 +66,28 @@ h3 {
   );
 }
 
-.navigation {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.site-header button {
+  transition: background-color, 4s, ease-in-out, 0.2s;
+}
+
+.site-header:hover button {
+  transform: scale(1.25);
+  background-color: var(--font-color-accent-warm);
+}
+
+button {
+  background-color: var(--font-color-accent-dark);
+  color: var(--font-color-light);
+  border: none;
+  border-radius: 0.25rem;
+  text-align: center;
+  padding: 0.25rem;
+  display: inline-block;
+  font-size: 1rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
 }
 
 .main-heading {
@@ -83,26 +101,15 @@ h3 {
   color: var(--font-color-accent-dark);
 }
 
-.address-element {
-  margin: 0.5rem;
+/*.top p::after {
+    content: "👩🏻‍💻";
 }
+*/
 
-.date {
-  font-size: 0.75rem;
-  color: var(--font-color-accent-cold);
-  margin-bottom: 0.25rem;
-  margin-top: 0.25rem;
-}
-
-.first {
-  font-weight: bold;
-}
-
-.workplace {
-  font-size: 1rem;
-  font-weight: 100;
-  font-style: italic;
-  color: var(--font-color-accent-dark);
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .links {
@@ -126,12 +133,46 @@ h3 {
   background-color: var(--font-color-light);
 }
 
+.address-element {
+  margin: 0.5rem;
+}
+
 [href^="mailto"] {
   color: var(--font-color-accent-warm);
 }
 
 [href^="tel"] {
   color: var(--font-color-accent-warm);
+}
+
+.first {
+  font-weight: bold;
+}
+
+.profile {
+  position: relative;
+  left: 0.5rem;
+}
+
+.section-heading {
+  position: relative;
+  left: 0.5rem;
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+.workplace {
+  font-size: 1rem;
+  font-weight: 100;
+  font-style: italic;
+  color: var(--font-color-accent-dark);
+}
+
+.date {
+  font-size: 0.75rem;
+  color: var(--font-color-accent-cold);
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
 }
 
 article + article {
@@ -144,55 +185,14 @@ article {
   padding-left: 0.5rem;
 }
 
-/*.top p::after {
-    content: "👩🏻‍💻";
-}
-*/
-
 article::first-letter {
   color: var(--font-color-accent-warm);
-}
-
-.section-heading {
-  position: relative;
-  left: 0.5rem;
-  margin-top: 1.5rem;
-  display: flex;
-}
-
-.profile {
-  position: relative;
-  left: 0.5rem;
 }
 
 .skills-heading {
   position: relative;
   left: 0.5rem;
   margin-top: 1.5rem;
-}
-
-.site-header button {
-  transition: background-color, 4s, ease-in-out, 0.2s;
-}
-
-.site-header:hover button {
-  transform: scale(1.25);
-  background-color: var(--font-color-accent-warm);
-}
-
-button {
-  background-color: var(--font-color-accent-dark);
-  color: var(--font-color-light);
-  border: none;
-  border-radius: 0.25rem;
-  text-align: center;
-  padding: 0.25rem;
-  display: inline-block;
-  font-size: 1rem;
-  cursor: pointer;
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
 }
 
 .footer {
@@ -272,5 +272,15 @@ button {
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: flex-start;
+  }
+}
+
+@media screen and (min-width) {
+  .main-article {
+    display: grid;
+  }
+
+  .main-article-heading {
+    grid-template-columns: 1fr 1.25fr;
   }
 }
